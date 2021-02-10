@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+
+    <ImageView
+        android:id="@+id/store_image"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription"
+        tools:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/store_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/store_status"
+        app:layout_constraintStart_toEndOf="@id/store_image"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Tsing Tao" />
+
+
+    <TextView
+        android:id="@+id/store_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:maxLines="2"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/store_status"
+        app:layout_constraintStart_toEndOf="@id/store_image"
+        app:layout_constraintTop_toBottomOf="@id/store_name"
+        tools:text="Chinese, Soup" />
+
+
+    <TextView
+        android:id="@+id/store_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/store_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="22 Mins" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
